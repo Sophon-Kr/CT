@@ -5,7 +5,7 @@
 
 
     <nav class="navbar navbar-light" style="background-color: #87C589; font-family: Comic Sans MS;">
-      <a href="/users" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="/users" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <img src="./assets/icons8-cactus-in-pot-48.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
         <span class="fs-4" style="font-family: Comic Sans MS; color: #FFFFFF;"> &nbsp;&nbsp;MYCACTI&nbsp;&nbsp;</span>
       </a>
@@ -44,10 +44,12 @@
           3
         </span></button>
         </router-link> -->
+        
 
         <a href="/profile" >
           <span ><img src="./assets/three-toed-sloth.jpg" alt="" width="35" height="35" class="rounded-circle" ></span>
         </a>
+        
       </div>
     </nav> <!--manu bar -->
 
