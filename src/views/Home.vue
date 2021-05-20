@@ -5,7 +5,7 @@
                 <div class="card-header" style="background-color: #87C58A;">
                     <div style="text-align: left;">
                         <a href="#" style="text-decoration: none;" >
-                            <span ><img src="../assets/three-toed-sloth.jpg" alt="" width="35" height="35" class="rounded-circle" ></span>
+                            <span ><img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" alt="" width="35" height="35" class="rounded-circle" ></span>
                           </a>
                           <span >&nbsp;&nbsp;Firstname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname</span>
                           <div style="float: right; margin-right: 10px; color: red;">
@@ -20,7 +20,7 @@
                     
 
                 <div class="card-body" style="text-align: left;">
-                    <img src="../assets/three-toed-sloth.jpg" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
+                    <img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
                   
                   <p class="card-text" style="padding: 10px;">
                                 With supporting text below as a natural lead-in to additional content.
@@ -56,7 +56,7 @@
                                 <div class="card-header">
                                     <div style="text-align: left;">
                                         <a href="#" style="text-decoration: none;" >
-                                            <span ><img src="three-toed-sloth.jpg" alt="" width="35" height="35" class="rounded-circle" ></span>
+                                            <span ><img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" alt="" width="35" height="35" class="rounded-circle" ></span>
                                           </a>
                                           <span>&nbsp;&nbsp;Firstname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname</span>
                                     </div>
