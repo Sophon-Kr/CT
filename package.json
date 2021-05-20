@@ -1,6 +1,7 @@
 {
-  "name": "firstviteapp",
-  "version": "0.0.0",
+  "name": "mycacti",
+  "version": "8.0.0",
+  "desciption" : "Final Website",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
