@@ -1,4 +1,11 @@
 <template>
+
+<div class="container"  style="max-width: 1000px;">
+      <div class="" style="min-height: auto;  min-width: auto;">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+</div>
     <div class="container " style="max-width: 1000px;">
 
             <div class="card text-center " style="margin-top: 10px;" >
@@ -20,7 +27,7 @@
                     
 
                 <div class="card-body" style="text-align: left;">
-                  
+
                     <img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
                   
                   <p class="card-text" style="padding: 10px;">
@@ -167,6 +174,7 @@ export default {
         }
         .card{
             max-width: 1000px;
+            
             
             
         }

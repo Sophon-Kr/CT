@@ -1,7 +1,14 @@
 <template>
   <div class="container">
-      <h1>Profile pics</h1>
-      
+   <div>
+      <img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" alt="" width="100" height="100" class="rounded-circle" >
+   </div>
+   
+   <div>
+    <h1>Profile pics</h1>
+   </div>
+     
+
   </div>
 </template>
 
