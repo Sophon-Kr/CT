@@ -5,11 +5,12 @@
 
 
     <nav class="navbar navbar-light" style="background-color: #87C589; font-family: Comic Sans MS;">
-      <a href="/users" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <router-link to="/users">
+      <a href="" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <img src="./assets/icons8-cactus-in-pot-48.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
         <span class="fs-4" style="font-family: Comic Sans MS; color: #FFFFFF;"> &nbsp;&nbsp;MYCACTI&nbsp;&nbsp;</span>
       </a>
-
+    </router-link>
         <div style="margin-right: 35px; margin-left: 35px;" class="space"> 
          <router-link to="/users"> 
         <button class="btn btn-success me-2 space"   type="button">
