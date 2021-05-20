@@ -20,6 +20,7 @@
                     
 
                 <div class="card-body" style="text-align: left;">
+                  
                     <img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
                   
                   <p class="card-text" style="padding: 10px;">

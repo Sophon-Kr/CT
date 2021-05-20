@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import AddUser from '../views/AddUser.vue'
 import Signin from '../views/Signin.vue'
 import Question from '../views/QnA.vue'
+import Profile from '../views/Profile.vue'
 
 const routerHistory = createWebHistory()
 
@@ -38,6 +39,11 @@ const routes = [
         path: '/adduser',
         name: AddUser,
         component: AddUser
+    },
+    {
+        path: '/profile',
+        name: Profile,
+        component: Profile
     }
     
 ]
