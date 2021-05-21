@@ -55,28 +55,10 @@
      
 
   </div>
-  <div class="container">
-            
-            <div class="card mb-3" style="max-width: 1000px;" >
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../assets/images.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue'
 export default {
-  components: { HelloWorld },
   name: 'Users',
   
   data() {

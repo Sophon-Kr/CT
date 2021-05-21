@@ -2,11 +2,20 @@ import { createRouter, createWebHistory } from 'vue-router' //กดจากห
 
 import Users from '../views/Home.vue'
 import About from '../views/About.vue'
-import AddUser from '../views/AddUser.vue'
+import A1 from '../views/A1.vue'
+import A2 from '../views/A2.vue'
+import A3 from '../views/A3.vue'
+import A4 from '../views/A4.vue'
+import A5 from '../views/A5.vue'
+import Q1 from '../views/Q1.vue'
+import Q2 from '../views/Q2.vue'
+import Q3 from '../views/Q3.vue'
+import Q4 from '../views/Q4.vue'
+import Q5 from '../views/Q5.vue'
 import Signin from '../views/Signin.vue'
 import Signup from '../views/Signup.vue'
-import Question from '../views/QnA.vue'
-import Profile from '../views/Profile.vue'
+import Mypost from '../views/Mypost.vue'
+
 
 const routerHistory = createWebHistory()
 
@@ -23,8 +32,8 @@ const routes = [
     },
     {
         path: '/question',
-        name: Question,
-        component: Question
+        name: Q1,
+        component: Q1
     },
     {
         path: '/',
@@ -42,14 +51,54 @@ const routes = [
         component: About
     },
     {
-        path: '/adduser',
-        name: AddUser,
-        component: AddUser
+        path: '/article',
+        name: A1,
+        component: A1
+    },
+    {
+        path: '/article2',
+        name: A2,
+        component: A2
+    },
+    {
+        path: '/article3',
+        name: A3,
+        component: A3
+    },
+    {
+        path: '/article4',
+        name: A4,
+        component: A4
+    },
+    {
+        path: '/article5',
+        name: A5,
+        component: A5
+    },
+    {
+        path: '/question2',
+        name: Q2,
+        component: Q2
+    },
+    {
+        path: '/question3',
+        name: Q3,
+        component: Q3
+    },
+    {
+        path: '/question4',
+        name: Q4,
+        component: Q4
+    },
+    {
+        path: '/question5',
+        name: Q5,
+        component: Q5
     },
     {
         path: '/profile',
-        name: Profile,
-        component: Profile
+        name: Mypost,
+        component: Mypost
     }
     
 ]

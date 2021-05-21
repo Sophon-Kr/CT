@@ -5,15 +5,11 @@
 
 
     <nav class="navbar navbar-light" style="background-color: #87C589; font-family: Comic Sans MS;">
-      <div class="text-decoration-none">
-         <router-link to="/users">
-      <a href="" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="/users" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <img src="./assets/icons8-cactus-in-pot-48.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
         <span class="fs-4" style="font-family: Comic Sans MS; color: #FFFFFF;"> &nbsp;&nbsp;MYCACTI&nbsp;&nbsp;</span>
       </a>
-    </router-link>
-      </div>
-     
+
         <div style="margin-right: 35px; margin-left: 35px;" class="space"> 
          <router-link to="/users"> 
         <button class="btn btn-success me-2 space"   type="button">
@@ -23,7 +19,7 @@
           Home</button>
           </router-link>
 
-          <router-link to="/adduser">
+          <router-link to="/article">
         <button class="btn btn-success me-2 space"   type="button"> 
           <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-richtext-fill" viewBox="0 0 16 16">
             <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
@@ -48,12 +44,10 @@
           3
         </span></button>
         </router-link> -->
-        
 
         <a href="/profile" >
           <span ><img src="./assets/three-toed-sloth.jpg" alt="" width="35" height="35" class="rounded-circle" ></span>
         </a>
-        
       </div>
     </nav> <!--manu bar -->
 

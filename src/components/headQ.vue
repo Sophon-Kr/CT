@@ -2,9 +2,10 @@
    <div>
             <img src="../assets/qna.png" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
         </div>
-                <div class="container">
+        <div class="container">
             <div class="row row-cols-auto" style="justify-content: center;">
-              
+
+              <router-link to="/question">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -18,8 +19,9 @@
                       <h5 class="card-text">มือใหม่</h5>
                     </div>
                 </div>
-              </div>
+              </div></router-link>
               
+              <router-link to="/question2">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -33,8 +35,9 @@
                       <h5 class="card-text">อุปกรณ์</h5>
                     </div>
                 </div>
-              </div>
+              </div></router-link>
 
+              <router-link to="/question3">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -49,8 +52,10 @@
                       <h5 class="card-text">ผลิตภัณฑ์</h5>
                     </div>
                 </div>
-              </div>
+              </div></router-link>
 
+
+              <router-link to="/question4">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -65,7 +70,9 @@
                       <h5 class="card-text">ขยายพันธุ์</h5>
                     </div>
                 </div>
-              </div>
+              </div></router-link>
+
+              <router-link to="/question5">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -80,7 +87,7 @@
                     </div>
                 </div>
               </div>
-              
+              </router-link>
               
               
               
@@ -90,37 +97,13 @@
             </div>
         </div>
 
-        <div class="container">
-            
-            search
-        </div>
-        
-
-         <div class="container">
-            
-            <div class="card mb-3" style="max-width: 1000px;" >
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../assets/images.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-       
-  </div>
-
 </template>
 <script>
 import axios from 'axios'
+import HelloWorld from './HelloWorld.vue'
 export default {
-  name: 'AddUser',
+  Components: { HelloWorld },
+  name: 'HeadQ',
   data() {
     return {
         User: {
@@ -162,7 +145,6 @@ export default {
         margin-top: 13px;
         background-color: #F0F5EE;
         font-family: Comic Sans MS;
-        padding: 10px;
         
         
         }
