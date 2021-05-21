@@ -15,6 +15,11 @@ import Q5 from '../views/Q5.vue'
 import Signin from '../views/Signin.vue'
 import Signup from '../views/Signup.vue'
 import Mypost from '../views/Mypost.vue'
+import Myarticle from '../views/Myarticle.vue'
+import Myquestion from '../views/Myquestion.vue'
+import Following from '../views/Following.vue'
+import Follower from '../views/Follower.vue'
+
 
 
 const routerHistory = createWebHistory()
@@ -96,10 +101,31 @@ const routes = [
         component: Q5
     },
     {
-        path: '/profile',
+        path: '/follower',
+        name: Follower,
+        component: Follower
+    },
+    {
+        path: '/following',
+        name: Following,
+        component: Following
+    },
+    {
+        path: '/myarticle',
+        name: Myarticle,
+        component: Myarticle
+    },
+    {
+        path: '/mypost',
         name: Mypost,
         component: Mypost
-    }
+    },
+    {
+        path: '/myquestion',
+        name: Myquestion,
+        component: Myquestion
+    },
+
     
 ]
 

@@ -45,9 +45,9 @@
         </span></button>
         </router-link> -->
 
-        <a href="/profile" >
+        <router-link to="/mypost">
           <span ><img src="./assets/three-toed-sloth.jpg" alt="" width="35" height="35" class="rounded-circle" ></span>
-        </a>
+        </router-link>
       </div>
     </nav> <!--manu bar -->
 
@@ -62,6 +62,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      usrid : ""
+    }
   }
 }
 </script>
