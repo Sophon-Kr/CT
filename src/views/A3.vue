@@ -77,4 +77,8 @@ export default {
             
             
         }
+        .textstyle{
+          font-family: Comic Sans MS; 
+          color: #87C589;
+        }
 </style>

@@ -8,10 +8,23 @@
 
           
         </div>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+  <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea> -->
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <form >
+  <div class="form-group ">
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
 
   <div class="d-grid  d-md-flex justify-content-md-end" style="margin-top:10px; ">
-<input class="form-control col-2 d-flex align-items-center" type="file" id="formFileMultiple" multiple>
+
+
+
+
 <button type="button" class="btn btn-danger" style="margin-left:10px; ">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
@@ -50,17 +63,12 @@
 
                 <div class="card-body" style="text-align: left;">
 
-                    <img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
+                    <img src="https://media.timeout.com/images/105653439/750/422/image.jpg" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
                   
                   <p class="card-text" style="padding: 10px;">
-                                With supporting text below as a natural lead-in to additional content.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi facilis neque 
-                      dolorem necessitatibus eaque saepe aperiam est adipisci quos excepturi, quod molestias 
-                      facere doloribus ipsa, ducimus delectus corrupti laboriosam.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi facilis neque 
-                      dolorem necessitatibus eaque saepe aperiam est adipisci quos excepturi, quod molestias 
-                      facere doloribus ipsa, ducimus delectus corrupti laboriosam.
-                      
+                                แคคตัสทรงอวบกลมที่ทุกคนเห็นกันบ่อยๆ แต่รู้ไหมว่าตอนนี้แคคตัสพันธุ์นี้ถูกกำกับว่าใกล้สูญพันธุ์นะ เนื่องจากหาได้ยากในธรรมชาติ
+
+                                กระบองเพชรพันธุ์นี้มาจากตระกูลเฟโรแคคตัส (Ferocactus) ที่สามารถโตได้มากสุดถึง 1 เมตรเลยทีเดียว ดังนั้น ขนาดที่เราเห็นกันบ่อยๆ เป็นเพียงไซส์จิ๋วมากๆ เท่านั้นเอง โดย แคคตัสถังทอง จะมีผิวสีเขียว หนามสีเหลืองทอง เมื่อโตขึ้นด้านบนจะยุบลงทำให้ดูคล้ายถัง ส่วนผิวของต้นนี้จะค่อนข้างบาง เราจึงไม่ควรปล่อยให้เขาโดนแดดจัด เพราะอาจทำให้ผิวไหม้ได้    
                       
                   </p>
                 </div>
@@ -93,8 +101,8 @@
                                 </div>
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0">
-                                    <p>A well-known quote, contained in a blockquote element.</p>
-                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    <p>อาจมองเผินๆ แล้วดูเหมือนพืชอย่างบร็อคโคลี่อยู่ไม่น้อย แต่ที่จริงแล้วกระบองเพชรสายพันธุ์นี้เป็นแคคตัสจากตระกูล แอริโอคาร์ปัส ฟิสซูราตัส (Ariocarpus fissuratus) ซึ่งเป็นพันธุ์แคคตัสหายาก ไร้หนาม และค่อนข้างโตช้า ทว่าราคาค่อนข้างสูง หลายคนที่ชอบสะสมแคคตัสจะนิยมเลี้ยงกัน</p>
+                                    <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
                                   </blockquote>
                                 </div>
                               </div>
@@ -144,20 +152,6 @@ export default {
       }
   },
   methods: {
-      DELETE(id){
-          this.uid = id
-      },
-      delUser(UserId){
-        axios.delete('http://localhost:5000/users/'+ UserId)
-        .then(()=>{
-            console.log('Delete userID: '+ UserId)
-            this.Users = response.data
-        })
-        .catch((error)=>{
-            console.log(error)
-        })
-        window.location.reload()
-      }
   }
 }
 </script>
@@ -199,6 +193,10 @@ export default {
             
             
             
+        }
+        .textstyle{
+          font-family: Comic Sans MS; 
+          color: #87C589;
         }
 
     </style>

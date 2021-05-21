@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router' //กดจากหน้าไหนไปหน้าไหน เป็นประวัติ
-
+import firebase from 'firebase'
 import Users from '../views/Home.vue'
 import About from '../views/About.vue'
 import A1 from '../views/A1.vue'
@@ -25,6 +25,15 @@ import Follower from '../views/Follower.vue'
 const routerHistory = createWebHistory()
 
 const routes = [
+
+    {
+        path: '/',
+        redirect: '/signin'
+    },
+    {
+        path: '/:catchAll(.*)',
+        redirect: '/signin'
+    },
     {
         path: '/signin',
         name: Signin,
@@ -40,11 +49,6 @@ const routes = [
         name: Q1,
         component: Q1
     },
-    {
-        path: '/',
-        redirect: '/users'
-    },
-
     {
         path: '/users',
         name: Users,
@@ -124,7 +128,7 @@ const routes = [
         path: '/myquestion',
         name: Myquestion,
         component: Myquestion
-    },
+    }
 
     
 ]
@@ -134,4 +138,6 @@ const router = createRouter({
     routes
 })
 
-export default router 
+
+
+export default router

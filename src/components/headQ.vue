@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row row-cols-auto" style="justify-content: center;">
 
-              <router-link to="/question">
+              <router-link to="/question" class="text-decoration-none" style="font-family: Comic Sans MS; color: #87C589;">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -21,7 +21,7 @@
                 </div>
               </div></router-link>
               
-              <router-link to="/question2">
+              <router-link to="/question2" class="text-decoration-none textstyle">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -37,7 +37,7 @@
                 </div>
               </div></router-link>
 
-              <router-link to="/question3">
+              <router-link to="/question3" class="text-decoration-none textstyle">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -55,7 +55,7 @@
               </div></router-link>
 
 
-              <router-link to="/question4">
+              <router-link to="/question4" class="text-decoration-none textstyle">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -72,7 +72,7 @@
                 </div>
               </div></router-link>
 
-              <router-link to="/question5">
+              <router-link to="/question5" class="text-decoration-none textstyle">
               <div class="col">
                 <div class="card" style="width: 9rem; margin: 5px;">
                     <div class="card-img-top" style="padding:5px">
@@ -146,11 +146,14 @@ export default {
         background-color: #F0F5EE;
         font-family: Comic Sans MS;
         
-        
         }
         .card{
             max-width: 1000px;
             
             
+        }
+        .textstyle{
+          font-family: Comic Sans MS; 
+          color: #87C589;
         }
 </style>

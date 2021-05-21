@@ -22,17 +22,12 @@
                     
 
                 <div class="card-body" style="text-align: left;">
-                    <img src="../assets/three-toed-sloth.jpg" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
+                    <img src="https://media.timeout.com/images/105653418/750/422/image.jpg" class="rounded img-fluid mx-auto d-block" alt="Cinque Terre" style="margin: 5px;">
                   
                   <p class="card-text" style="padding: 10px;">
-                                With supporting text below as a natural lead-in to additional content.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi facilis neque 
-                      dolorem necessitatibus eaque saepe aperiam est adipisci quos excepturi, quod molestias 
-                      facere doloribus ipsa, ducimus delectus corrupti laboriosam.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi facilis neque 
-                      dolorem necessitatibus eaque saepe aperiam est adipisci quos excepturi, quod molestias 
-                      facere doloribus ipsa, ducimus delectus corrupti laboriosam.
-                      
+                     แคคตัสตระกูลยิมโนคาไลเซียม (Gymnocalycium) มีสายพันธุ์หลากหลายกว่า 120 รายชื่อ เชื่อว่าบางสายพันธุ์อาจเห็นกันได้ทั่วไป แต่สำหรับที่เรานำมาแนะนำให้รู้จักวันนี้เป็น แคคตัสชนิดกลายพันธุ์ ที่ดูเหมือนมีแคคตัส 2 ต้นรวมร่างกันอยู่ โดยมีชื่อเรียกพันธุ์นี้ว่า Moon Cactus
+
+                  ที่จริงแล้วกระบองเพชรพันธุ์นี้เกิดจากฝีมือมนุษย์ ที่ผสมแคคตัส 2 สายพันธุ์เข้าด้วยกัน โดยลำต้นด้านบนจะมีลักษณะกลม มีหนาม และมีสีสันอย่าง เหลือง ส้ม แดง ส่วนด้านล่างเป็นลำต้นสีเขียว จึงเรียกสายพันธุ์นี้ว่า แคคตัสพระจันทร์ ซึ่งเป็นพันธุ์ที่มีความสวยงามแปลกตา และควรมีไว้สักต้นในห้องมากๆ
                       
                   </p>
                 </div>
@@ -45,7 +40,7 @@
                             <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                           </svg>
                         Danger</button>
-                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
                                 <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
                               </svg>
@@ -111,5 +106,9 @@ export default {
             max-width: 1000px;
             
             
+        }
+        .textstyle{
+          font-family: Comic Sans MS; 
+          color: #87C589;
         }
 </style>

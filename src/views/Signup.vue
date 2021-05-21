@@ -7,54 +7,66 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       <form class="row g-3">
   <div class="col-md-6">
     <label for="validationServer01" class="form-label">First name</label>
-    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
+    <input type="text" class="form-control" id="validationServer01" value="" required>
   </div>
   <div class="col-md-6">
     <label for="validationServer02" class="form-label">Last name</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
+    <input type="text" class="form-control" id="validationServer02" value="" required>
   </div>
 
  <div class="col-md-6">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input type="email" v-model="formData.email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
 
   <div class="col-md-6">
     <label for="inputPassword" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword">
+      <input type="password" v-model="formData.password" class="form-control" id="inputPassword">
     
   </div>
 
  
-<div class="input-group mb-3 " style="margin-top:30px">
-  <input type="file" class="form-control" id="inputGroupFile02" style="max-width:595px; margin-left:15px; margin-left:15px">
-  <label class="input-group-text" for="inputGroupFile02">Upload</label>
+<div class="input-group col-12 " style="margin-top:30px">
+  <input type="file" class="form-control" id="inputGroupFile02" style="max-width:595px; margin-left:10px; margin-right:15px">
+  <label class="input-group-text" for="inputGroupFile02">Upload Profile</label>
 </div>
 
-  <div class="col-8">
-    <button class="btn btn-success" type="submit">Sign up</button>
+  <div class="col-8" style="margin-top:30px">
+    <button class="btn btn-success" @click="signUp" type="submit">Sign up</button>
   </div>
 </form>
   </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue'
+import firebase from 'firebase'
 export default {
-  components: { HelloWorld },
-  name: 'Users',
-  
-  data() {
+  name: 'Signup',
+  data () {
     return {
-      count: 0
+      formData: {
+        email: '',
+        password: ''
+      }
     }
-  }
+  },
+  methods: {
+    signUp () {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(
+          this.formData.email,
+          this.formData.password
+        )
+        .then(user => {
+          this.$router.replace('/users')
+        })
+        .catch(e => {
+          alert('oops' + e.message)
+        })
+    }
+  },
+  created () {}
 }
 </script>
 <style scoped>
@@ -79,5 +91,9 @@ export default {
             max-width: 1000px;
             
             
+        }
+        .textstyle{
+          font-family: Comic Sans MS; 
+          color: #87C589;
         }
 </style>
