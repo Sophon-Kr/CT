@@ -132,7 +132,7 @@ export default {
         Users: [],
         search: '',
         uid: '',
-        imagePro:'',
+        imagePro:''
     }
   },
   mounted () {

@@ -138,18 +138,18 @@ const router = createRouter({
     routes
 })
 
-router.beforeEach((to, from, next) => {
-    const currentUser = firebase.auth().currentUser
-    const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-    if (requiresAuth && !currentUser) {
-      console.log("You are not authorized to access this area.");
-      next('signin')
-    } else if (!requiresAuth && currentUser) {
-      console.log("You are authorized to access this area.");
-      next('users')
-    } else {
-      next()
-    }
-  })
+// router.beforeEach((to, from, next) => {
+//     const currentUser = firebase.auth().currentUser
+//     const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
+//     if (requiresAuth && !currentUser) {
+//       console.log("You are not authorized to access this area.");
+//       next('signin')
+//     } else if (!requiresAuth && currentUser) {
+//       console.log("You are authorized to access this area.");
+//       next('users')
+//     } else {
+//       next()
+//     }
+//   })
 
 export default router
