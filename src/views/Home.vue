@@ -41,15 +41,15 @@
 
 </div>
 </div>
-    <div class="container " style="max-width: 1000px;">
+    <div class="container" style="max-width: 1000px;" v-for="users in Users">
 
             <div class="card text-center " style="margin-top: 10px;" >
                 <div class="card-header" style="background-color: #87C58A;">
                     <div style="text-align: left;">
                         <a href="#" style="text-decoration: none;" >
-                            <span ><img src="https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ" alt="" width="35" height="35" class="rounded-circle" ></span>
+                            <span ><img :src="users.profileImage" alt="" width="35" height="35" class="rounded-circle" ></span>
                           </a>
-                          <span >&nbsp;&nbsp;Firstname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname</span>
+                          <span >&nbsp;&nbsp;{{users.firstname}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{users.lastname}}</span>
                           <div style="float: right; margin-right: 10px; color: red;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F44336" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -131,14 +131,15 @@ export default {
     return {
         Users: [],
         search: '',
-        uid: ''
+        uid: '',
+        imagePro:'',
     }
   },
   mounted () {
       axios.get('http://localhost:5000/users')
         .then((response)=>{
-            console.log(response.data)
             this.Users = response.data
+            console.log(this.Users)
         })
         .catch((error)=>{
             console.log(error)

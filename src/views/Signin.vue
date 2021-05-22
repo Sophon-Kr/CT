@@ -96,6 +96,7 @@ export default {
   created () {}
 }
 </script>
+
 <style scoped>
 .container {
         display: flex;

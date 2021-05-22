@@ -4,7 +4,7 @@ import firebase from 'firebase'
 import router from './router'
 
 import './index.css'
-import'bootstrap'
+// import'bootstrap'
 import'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -15,6 +15,7 @@ let app
   var firebaseConfig = {
     apiKey: "AIzaSyCBIOA8D9_FkWhvl1VqWrl7bLi4YDLOU6Y",
     authDomain: "mycactus-1a1d8.firebaseapp.com",
+    databaseURL: "https://mycactus-1a1d8-default-rtdb.firebaseio.com",
     projectId: "mycactus-1a1d8",
     storageBucket: "mycactus-1a1d8.appspot.com",
     messagingSenderId: "797041841910",
@@ -27,8 +28,6 @@ let app
 
   firebase.auth().onAuthStateChanged((user)=> {
     if(!app){
-        // สร้างใหม่เมื่อไม่เคยล็อกอินมาก่อน
-        
+      app = createApp(App).use(router).mount('#app')        
     }
  })
- app = createApp(App).use(router).mount('#app')
