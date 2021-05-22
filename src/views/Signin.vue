@@ -16,6 +16,8 @@
                         <div class="form-floating">
                              <input type="password" v-model="formData.password" class="form-control" id="floatingPassword" placeholder="Password">
                         </div>
+
+
                         <div class="d-grid gap-2 d-md-block" style="border-color:grey;
                         border-radius: 10px;
                         background-color: white; padding:5px">
@@ -34,7 +36,7 @@
                           <router-link to="/signup">
                             <button class="w-100 btn btn-lg btn-secondary  btn-lg" type="submit" >Sign up</button>
                           </router-link>
-                            <button class="w-100 btn btn-lg btn-success btn-lg" v-on:click ="signIn" type="submit" style="margin-top:5px">Sign in</button>
+                            <button class="w-100 btn btn-lg btn-success btn-lg" @click="signIn" type="submit" style="margin-top:5px">Sign in</button>
                           </div>
                       
                       

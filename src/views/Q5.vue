@@ -2,15 +2,15 @@
           <HeadQ />
          <div class="container">
             
-            <div class="card mb-3" style="max-width: 1000px;" >
+           <div class="card mb-3" style="max-width: 1000px;" >
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="../assets/images.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
+                    <img src="https://media.timeout.com/images/105653441/750/422/image.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">555555555555555555555This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="card-title">Card title5</h4>
+                      <p class="card-text">ลักษณะลำต้นจะมีสีเขียว ดูเหมือนนิ้ว มีโคนหนามสีออกเหลือง ปลายสีแดง ขึ้นอยู่ทั่วลำต้น เมื่อดอกผลิจะเห็นเป็นสีขาวขนาดเล็ก พันธุ์นี้นิยมขยายพันธุ์ด้วยการแตกหน่อ และเรามักจะเห็นว่ามีหลายลำต้นในกระถางเดียวกัน</p>
                       
                     </div>
                   </div>

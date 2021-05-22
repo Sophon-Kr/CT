@@ -5,12 +5,14 @@
             <div class="card mb-3" style="max-width: 1000px;" >
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="../assets/images.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
+                    <img src="https://media.timeout.com/images/105653422/750/422/image.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">555555555555555555555This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="card-title">Card title5</h4>
+                      <p class="card-text">กระบองเพชรสายพันธุ์นี้เหมาะกับตั้งไว้ประดับห้องมากๆ เพราะมีความสวยงามตามชื่อ ด้วยการแตกหน่อโตขึ้นเป็นชั้นๆ ลดหลั่นกันจนดูเหมือนเป็นปราสาท โดยแต่ละลำต้นจะมีพูประมาณ 5 พู และมีตุ่มหนามสีขาวเล็กๆ ขึ้นเรียงกันดูสวยงามมากๆ
+
+                        ปราสาทนางฟ้า เป็นกระบองเพชรที่ไม่ต้องโดนแดดโดยตรง เพียงแค่วางรับแดดครึ่งวันเช้า และไม่ชอบน้ำมาก ทำให้เหมาะกับเลี้ยงในร่มที่คอนโดหรือห้องนอน</p>
                       
                     </div>
                   </div>
