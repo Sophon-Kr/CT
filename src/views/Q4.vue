@@ -1,84 +1,77 @@
 <template>
-          <HeadQ />
-         <div class="container">
-            
-            <div class="card mb-3" style="max-width: 1000px;" >
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="https://media.timeout.com/images/105653441/750/422/image.jpg" alt="..."  style="padding: 15px;" class="rounded img-fluid mx-auto d-block">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title4</h4>
-                      <p class="card-text">ลักษณะลำต้นจะมีสีเขียว ดูเหมือนนิ้ว มีโคนหนามสีออกเหลือง ปลายสีแดง ขึ้นอยู่ทั่วลำต้น เมื่อดอกผลิจะเห็นเป็นสีขาวขนาดเล็ก พันธุ์นี้นิยมขยายพันธุ์ด้วยการแตกหน่อ และเรามักจะเห็นว่ามีหลายลำต้นในกระถางเดียวกัน</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-       
+  <HeadQ />
+  <div class="container" v-for="question in Questions">
+    <div class="card mb-3" style="max-width: 1000px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            :src="question.pic"
+            alt="..."
+            style="padding: 15px"
+            class="rounded img-fluid mx-auto d-block"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-title">{{ question.questionTopic }}</h4>
+            <p class="card-text">{{ question.questionDesc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
-
 </template>
 <script>
-import axios from 'axios'
-import HeadQ from '../components/headQ.vue'
+import axios from "axios";
+import HeadQ from "../components/headQ.vue";
 export default {
   components: { HeadQ },
-  name: 'question4',
+  name: "question4",
   data() {
     return {
-        User: {
-            firstName: '',
-            lastName: '',
-            email: ''
-        } 
-        
-    }
+      Questions: [],
+    };
   },
-  methods: {
-      addToAPI () {
-          let newUser ={
-              firstName: this.User.firstName,
-              lastName: this.User.lastName,
-              email: this.User.email
-          }
-        axios.post('http://localhost:5000/users', newUser)
-        .then((response)=>{
-            console.log(response.data)
-        })
-        .catch((error)=>{
-            console.log(error)
-        })
-      }
-  }
-}
+  mounted() {
+    axios
+      .get("https://project07-062.herokuapp.com/questions")
+      .then((response) => {
+        this.Questions = response.data;
+        console.log(this.Questions);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+  computed: {
+    filterUsers: function () {
+      return this.Users.filter((user) => {
+        return user.firstName.match(this.search); //จะแมทแค่ firstname
+      });
+    },
+  },
+  methods: {},
+};
 </script>
 <style scoped>
 .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1000px;
-        height: auto;
-        border-radius: 10px;
-        border-style: solid;
-        border-color: lightgrey;
-        margin-top: 13px;
-        background-color: #F0F5EE;
-        font-family: Comic Sans MS;
-        
-        
-        }
-        .card{
-            max-width: 1000px;
-            
-            
-        }
-        .textstyle{
-          font-family: Comic Sans MS; 
-          color: #87C589;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-top: 13px;
+  background-color: #f0f5ee;
+  font-family: Comic Sans MS;
+}
+.card {
+  max-width: 1000px;
+}
+.textstyle {
+  font-family: Comic Sans MS;
+  color: #87c589;
+}
 </style>

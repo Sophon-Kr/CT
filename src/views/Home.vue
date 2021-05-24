@@ -181,7 +181,7 @@
                         class="rounded-circle"
                     /></span>
                   </a>
-                  <p>{{ users._id }}</p>
+                  <p></p>
                   <span
                     >&nbsp;&nbsp;Firstname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname</span
                   >
@@ -233,7 +233,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:5000/users")
+      .get("https://project07-062.herokuapp.com/users")
       .then((response) => {
         this.Users = response.data;
         console.log(this.Users);
