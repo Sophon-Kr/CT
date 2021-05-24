@@ -60,13 +60,13 @@ export default {
         )
         .then(user => {
           this.$router.replace('/users')
+          console.log("Alrady signin")
         })
         .catch(e => {
           alert('oops' + e.message)
         })
     }
-  },
-  created () {}
+  }
 }
 </script>
 <style scoped>

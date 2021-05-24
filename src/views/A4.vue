@@ -77,33 +77,60 @@ import HeadA from '../components/headA.vue'
 export default {
   components: { HeadA },
   name: 'Article4',
+
   data() {
     return {
-        User: {
-            firstName: '',
-            lastName: '',
-            email: ''
-        } 
-        
-    }
+      Articles: [],
+      key: ''
+    };
   },
-  methods: {
-      addToAPI () {
-          let newUser ={
-              firstName: this.User.firstName,
-              lastName: this.User.lastName,
-              email: this.User.email
-          }
-        axios.post('http://localhost:5000/users', newUser)
-        .then((response)=>{
-            console.log(response.data)
-        })
-        .catch((error)=>{
-            console.log(error)
-        })
-      }
-  }
-}
+  mounted() {
+    axios
+      .get("http://localhost:5000/articles")
+      .then((response) => {
+        this.Articles = response.data;
+        console.log(this.articles);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+  computed: {
+    filterUsers: function () {
+      return this.Users.filter((user) => {
+        return user.firstName.match(this.search); //จะแมทแค่ firstname
+      });
+    },
+  },
+  methods: {},
+};
+//   data() {
+//     return {
+//         User: {
+//             firstName: '',
+//             lastName: '',
+//             email: ''
+//         } 
+        
+//     }
+//   },
+//   methods: {
+//       addToAPI () {
+//           let newUser ={
+//               firstName: this.User.firstName,
+//               lastName: this.User.lastName,
+//               email: this.User.email
+//           }
+//         axios.post('http://localhost:5000/users', newUser)
+//         .then((response)=>{
+//             console.log(response.data)
+//         })
+//         .catch((error)=>{
+//             console.log(error)
+//         })
+//       }
+//   }
+// }
 </script>
 <style scoped>
 .container {
