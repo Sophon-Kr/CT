@@ -9,7 +9,7 @@
           <img
             :src="article.pic"
             alt="..."
-            style="padding: 15px"
+            
             class="rounded img-fluid mx-auto d-block"
           />
         </div>
@@ -106,7 +106,11 @@ export default {
   font-family: Comic Sans MS;
 }
 .card {
-  max-width: 1000px;
+ max-width: 1000px;
+  max-height: 170px;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  text-align: left;
 }
 .textstyle {
   font-family: Comic Sans MS;
