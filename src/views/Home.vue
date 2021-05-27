@@ -67,7 +67,7 @@
       </div>
     </div>
   </div>
-  <div class="container" style="max-width: 1000px" v-for="users in Users">
+  <div class="container" style="max-width: 1000px" v-for="users in Users" :key="Users._id">
     <div class="card text-center" style="margin-top: 10px">
       <div class="card-header" style="background-color: #87c58a">
         <div style="text-align: left">

@@ -100,7 +100,7 @@
         </span></button>
         </router-link> -->
 
-        <router-link to="/mypost">
+        <!-- <router-link to="/mypost">
           <span
             ><img
               src="./assets/three-toed-sloth.jpg"
@@ -109,8 +109,33 @@
               height="35"
               class="rounded-circle"
           /></span>
-        </router-link>
+        </router-link> -->
+
+        <span class="dropdown ">
+        <a class="dropdown-toggle " data-toggle="dropdown">
+         <span
+            ><img
+              src="./assets/three-toed-sloth.jpg"
+              alt=""
+              width="35"
+              height="35"
+              class="rounded-circle"
+          /></span>
+        </a >
+        <div class="dropdown-menu dropdown-menu-end dropdown-menu-start ">
+          <router-link to="/mypost">
+          <a class="dropdown-item text-decoration-none textstyle" href="#">Profile</a>
+          </router-link>
+           <router-link to="/signin">
+          <a class="dropdown-item text-decoration-none textstyle" href="#">Logout</a>
+          </router-link>
+        </div>
+      </span>
+
+
       </div>
+
+      
     </nav>
     <!--manu bar -->
 

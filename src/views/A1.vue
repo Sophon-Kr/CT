@@ -1,6 +1,6 @@
 <template>
   <HeadA />
-  <div class="container" v-for="article in Articles" :key="key">
+  <div class="container" v-for="article in Articles" :key="Articles._id">
     <div class="card mb-3" style="max-width: 1000px">
       <div class="row g-0">
         <div class="col-md-4">
@@ -60,6 +60,7 @@ export default {
   justify-content: center;
   align-items: center;
   max-width: 1000px;
+  
   height: auto;
   border-radius: 10px;
   border-style: solid;
