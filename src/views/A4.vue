@@ -2,26 +2,26 @@
   <HeadA />
 
   <router-link to="/about" class="text-decoration-none textstyle">
-    <div class="container" v-for="article in Articles">
-      <div class="card mb-3" style="max-width: 1000px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              :src="article.pic"
-              alt="..."
-              style="padding: 15px"
-              class="rounded img-fluid mx-auto d-block"
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title">{{ article.articleNm }}</h4>
-              <p class="card-text">{{ article.articleDesc }}</p>
-            </div>
+   <div class="container" v-for="article in category(Articles)">
+    <div class="card mb-3" style="max-width: 1000px" >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            :src="article.pic"
+            alt="..."
+            style="padding: 15px"
+            class="rounded img-fluid mx-auto d-block"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-title">{{article.articleNm}}</h4>
+            <p class="card-text">{{ article.articleDesc }}</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </router-link>
 </template>
 <script>
@@ -49,13 +49,19 @@ export default {
       });
   },
   computed: {
-    filterUsers: function () {
-      return this.Users.filter((user) => {
-        return user.firstName.match(this.search); //จะแมทแค่ firstname
-      });
-    },
+    // filterUsers: function () {
+    //   return this.Users.filter((user) => {
+    //     return user.firstName.match(this.search); //จะแมทแค่ firstname
+    //   });
+    // },
   },
-  methods: {},
+  methods: {
+    category: function () {
+    return this.Articles.filter((Articles) =>{
+      return Articles.category == 4 
+    })
+  }
+  },
 };
 //   data() {
 //     return {
