@@ -1,5 +1,6 @@
 <template>
   <HeadA />
+  <router-link to="/about" class="text-decoration-none textstyle">
   <div class="container" v-for="article in category(Articles)">
     <div class="card mb-3" style="max-width: 1000px" >
       <div class="row g-0">
@@ -20,6 +21,7 @@
       </div>
     </div>
   </div>
+  </router-link>
 </template>
 <script>
 import axios from "axios";

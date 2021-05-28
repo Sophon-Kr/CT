@@ -1,6 +1,6 @@
 <template>
   <HeadQ />
-  <div class="container" v-for="question in Questions">
+  <div class="container" v-for="question in category(Questions)">
     <div class="card mb-3" style="max-width: 1000px">
       <div class="row g-0">
         <div class="col-md-4">
@@ -50,7 +50,13 @@ export default {
       });
     },
   },
-  methods: {},
+  methods: {
+    category: function () {
+    return this.Questions.filter((Questions) =>{
+      return Questions.category == 5 
+    })
+  }
+  },
 };
 </script>
 <style scoped>

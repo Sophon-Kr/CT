@@ -133,7 +133,7 @@ export default {
   name: "Users",
 data() {
     return {
-      Articles: [],
+      Articles: []
     };
   },
   mounted() {
