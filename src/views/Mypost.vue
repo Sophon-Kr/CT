@@ -3,7 +3,7 @@
   <div class="container" v-for="post in Posts">
     <div class="card mb-3" style="max-width: 1000px">
       <h1>Post</h1>
-      <p>{{post}}</p>
+      <!-- <p>{{post}}</p> -->
     </div>
   </div>
 </template>
